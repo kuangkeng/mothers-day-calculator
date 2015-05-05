@@ -193,11 +193,11 @@ console.log("sum = " + inputdecorating);
 console.log("sum = " + inputfinding);
 console.log("sum = " + inputcounseling);
 				
-console.log("Total Wage is: " + totalround);
+console.log("Total Wage is: " + totalwageround);
 
 $("#result").show();
 $("#bottomform").show();
-$("#totalnumber").text(totalround);
+$("#totalnumber").text(totalwageround);
 $("#button").hide();
 
 
