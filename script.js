@@ -138,20 +138,20 @@ $(document).ready(function(){
 submitHandler: function(form) {
 
 //setting the input variables
-		var inputcooking = $('#inputcookinghour').val()*data.cooking,
-			inputdriving = $('#inputdrivinghour').val()*data.driving,
-			inputhomework = $('#inputhomeworkhour').val()*data.homeworksec,
-			inputkids = $('#inputkidshour').val()*data.kids,
-			inputcleaning = $('#inputcleaninghour').val()*data.cleaning,
-			inputplanning = $('#inputplanninghour').val()*data.planning,
-			inputshopping = $('#inputshoppinghour').val()*data.shopping,
-			inputfinances = $('#inputfinanceshour').val()*data.finances,
-			inputyard = $('#inputyardhour').val()*data.yard,
-			inputdecorating = $('#inputdecoratinghour').val()*data.decorating,
-			inputfinding = $('#inputfindinghour').val()*data.finding,
-			inputcounseling = $('#inputcounselinghour').val()*data.counseling;
+		var inputcooking = $('#inputcookinghour').val()/10*10*data.cooking,
+			inputdriving = $('#inputdrivinghour').val()/10*10*data.driving,
+			inputhomework = $('#inputhomeworkhour').val()/10*10*data.homeworksec,
+			inputkids = $('#inputkidshour').val()/10*10*data.kids,
+			inputcleaning = $('#inputcleaninghour').val()/10*10*data.cleaning,
+			inputplanning = $('#inputplanninghour').val()/10*10*data.planning,
+			inputshopping = $('#inputshoppinghour').val()/10*10*data.shopping,
+			inputfinances = $('#inputfinanceshour').val()/10*10*data.finances,
+			inputyard = $('#inputyardhour').val()/10*10*data.yard,
+			inputdecorating = $('#inputdecoratinghour').val()/10*10*data.decorating,
+			inputfinding = $('#inputfindinghour').val()/10*10*data.finding,
+			inputcounseling = $('#inputcounselinghour').val()/10*10*data.counseling;
 
-		var totalwage = inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling;
+		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling);
 
 console.log("input = " + $('#inputcookinghour').val());
 console.log("input = " + $('#inputdrivinghour').val());
