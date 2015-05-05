@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h2>How much time you spend on these tasks every week?</h2>
+<form name="myForm" id="mothersform" method="get" action="#">
+<ol>
+<li>
+Cooking<br>
+<input type="text" name="cookinghour" value="0" id="inputcookinghour"/>hour<br>
+</li>
+<br>
+<li>
+Driving<br>
+<input type="text" name="drivinghour" value="0" id="inputdrivinghour"/>hour<br>
+</li>
+<br>
+<li>
+Helping with homework<br>
+<input type="text" name="homeworkhour" value="0" id="inputhomeworkhour"/>hour<br>
+</li>
+<br>
+<li>
+Taking care of the kids<br>
+<input type="text" name="kidshour" value="0" id="inputkidshour"/>hour<br>
+</li>
+<br>
+<li>
+Housekeeping and cleaning<br>
+<input type="text" name="cleaninghour" value="0" id="inputcleaninghour"/>hour<br>
+</li>
+<br>
+<li>
+Activity planning<br>
+<input type="text" name="planninghour" value="0" id="inputplanninghour"/>hour<br>
+</li>
+<br>
+<li>
+Shopping for the family<br>
+<input type="text" name="shoppinghour" value="0" id="inputshoppinghour"/>hour<br>
+</li>
+<br>
+<li>
+Family finances<br>
+<input type="text" name="financeshour" value="0" id="inputfinanceshour"/>hour<br>
+</li>
+<br>
+<li>
+Yard work<br>
+<input type="text" name="yardhour" value="0" id="inputyardhour"/>hour<br>
+</li>
+<br>
+<li>
+Decorating the house<br>
+<input type="text" name="decoratinghour" value="0" id="inputdecoratinghour"/>hour<br>
+</li>
+<br>
+<li>
+Finding out what the kids are up to<br>
+<input type="text" name="findinghour" value="0" id="inputfindinghour"/>hour<br>
+</li>
+<br>
+<li>
+Children counseling<br>
+<input type="text" name="counselinghour" value="0" id="inputcounselinghour"/>hour<br>
+</li>
+<br>
+</ol>
+<input type="submit" value="Submit" id="button"/>
+</form>
+
+
+
+<FORM id="bottomform">
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Take the quiz again" id="reset">
+</FORM>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
