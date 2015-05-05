@@ -4,7 +4,7 @@ var data = {
 			  cooking: 20.01,
 			  driving: 11.16,
 			  homeworkpre: 16.39,
-			  homework-sec: 14.62,
+			  homeworksec: 14.62,
 			  kids: 9.48,
 			  cleaning: 10.98,
 			  planning: 22.35,
