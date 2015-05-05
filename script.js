@@ -164,8 +164,9 @@ submitHandler: function(form) {
 			inputdecorating+
 			inputfinding+
 			inputcounseling;
-
-console.log("Tota Wage is: " + totalwage);
+console.log(inputcooking);
+console.log(inputcounseling);
+console.log("Total Wage is: " + totalwage);
 
 $("#result").show();
 
