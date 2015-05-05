@@ -1,4 +1,4 @@
-$("#result","#bottomform").hide();
+$("#result, #bottomform").hide();
 
 var data = {
 			  cooking: 20.01,
