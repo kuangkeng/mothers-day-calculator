@@ -135,37 +135,4 @@ $(document).ready(function(){
     },
     wrapper: 'div',        	
 
-submitHandler: function(form) {
-
-//setting the input variables
-		var inputcooking = $('#inputcookinghour').val()*data.cooking,
-			inputdriving = $('#inputdrivinghour').val()*data.driving,
-			inputhomework = $('#inputhomeworkhour').val()*data.homework,
-			inputkids = $('#inputkidshour').val()*data.kids,
-			inputcleaning = $('#inputcleaninghour').val()*data.cleaning,
-			inputplanning = $('#inputplanninghour').val()*data.planning,
-			inputshopping = $('#inputshoppinghour').val()*data.shopping,
-			inputfinances = $('#inputfinanceshour').val()*data.finances,
-			inputyard = $('#inputyardhour').val()*data.yard,
-			inputdecorating = $('#inputdecoratinghour').val()*data.decorating,
-			inputfinding = $('#inputfindinghour').val()*data.finding,
-			inputcounseling = $('#inputcounselinghour').val()*data.counseling;
-
-		var totalwage = 
-			inputcooking+
-			inputdriving+
-			inputhomework+
-			inputkids+
-			inputcleaning+
-			inputplanning+
-			inputshopping+
-			inputfinances+
-			inputyard+
-			inputdecorating+
-			inputfinding+
-			inputcounseling;
-
-console.log("Tota Wage is: " + totalwage);
-
-    }
-})};
+})});
