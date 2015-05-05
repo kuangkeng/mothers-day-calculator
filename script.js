@@ -151,7 +151,7 @@ submitHandler: function(form) {
 			inputfinding = $('#inputfindinghour').val()*data.finding,
 			inputcounseling = $('#inputcounselinghour').val()*data.counseling;
 
-//		var totalwage = inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling;
+		var totalwage = inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling;
 
 console.log("input = " + $('#inputcookinghour').val());
 console.log("input = " + $('#inputdrivinghour').val());
@@ -185,7 +185,7 @@ console.log("sum = " + inputhomework);
 console.log("sum = " + inputkids);
 console.log("sum = " + inputcleaning);
 console.log("sum = " + inputplanning);
-console.log("sum = " + inputshoping);
+console.log("sum = " + inputshopping);
 console.log("sum = " + inputfinances);
 console.log("sum = " + inputyard);
 console.log("sum = " + inputdecorating);
