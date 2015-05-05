@@ -1,4 +1,4 @@
-$("#result, #bottomform").hide();
+$("#result, #bottomform, #occupation").hide();
 
 var data = {
 			  cooking: 20.01,
@@ -196,9 +196,9 @@ console.log("sum = " + inputcounseling);
 console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
 
-$("#result").show();
-$("#bottomform").show();
+$("#result, #bottomform, #occupation").show();
 $("#totalnumber").text(totalwageround);
+$("#occupation").text("general maneger");
 $("#button").hide();
 
 
