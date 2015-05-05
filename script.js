@@ -150,7 +150,7 @@ submitHandler: function(form) {
 			inputdecorating = ($('#inputdecoratinghour').val()*data.decorating).toFixed(4),
 			inputfinding = ($('#inputfindinghour').val()*data.finding).toFixed(4),
 			inputcounseling = ($('#inputcounselinghour').val()*data.counseling).toFixed(4);
-
+var totalwagetest = 12*(inputcooking + inputdriving);
 		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling);
 		var totalwageround = totalwage.toFixed(2);
 
@@ -193,7 +193,7 @@ console.log("sum = " + inputdecorating);
 console.log("sum = " + inputfinding);
 console.log("sum = " + inputcounseling);
 				
-console.log("totalwage is: " + totalwage);
+console.log("totalwage is: " + totalwagetest);
 console.log("totalwageround is: " + totalwageround);
 
 $("#result").show();
