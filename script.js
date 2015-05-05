@@ -1,4 +1,4 @@
-// $("#result").hide();
+$("#result").hide();
 
 var data = {
 			  cooking: 20.01,
@@ -166,7 +166,10 @@ submitHandler: function(form) {
 			inputcounseling;
 
 console.log("Tota Wage is: " + totalwage);
+
+$("#result").show();
+
     }
-         	
+
 
 })});
