@@ -1,4 +1,4 @@
-$("#result").hide();
+$("#result","#bottomform").hide();
 
 var data = {
 			  cooking: 20.01,
@@ -195,8 +195,10 @@ console.log("sum = " + inputcounseling);
 console.log("Total Wage is: " + totalwage);
 
 $("#result").show();
+$("#bottomform").show();
 $("#totalnumber").text(totalwage);
 $("#button").hide();
+
 
     }
 
