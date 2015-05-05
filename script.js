@@ -164,6 +164,9 @@ submitHandler: function(form) {
 			inputdecorating+
 			inputfinding+
 			inputcounseling;
+
+console.log($('#inputcookinghour').val());			
+console.log(data.cooking);
 console.log(inputcooking);
 console.log(inputcounseling);
 console.log("Total Wage is: " + totalwage);
