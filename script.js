@@ -3,7 +3,7 @@
 var data = {
 			  cooking: 20.01,
 			  driving: 11.16,
-			  homewor-pre: 16.39,
+			  homeworkpre: 16.39,
 			  homework-sec: 14.62,
 			  kids: 9.48,
 			  cleaning: 10.98,
@@ -138,12 +138,12 @@ $(document).ready(function(){
 submitHandler: function(form) {
 
 //setting the input variables
-		var inputsleep = ($('#inputsleephour').val()/10*10 + $('#inputsleepmin').val()/60),
-			inputwork = $('#inputworkhour').val()/10*10 + $('#inputworkmin').val()/60,
-			inputshop = $('#inputshophour').val()/10*10 + $('#inputshopmin').val()/60,
-			inputtv = $('#inputtvhour').val()/10*10 + $('#inputtvmin').val()/60,
-			inputvideo = $('#inputvideohour').val()/10*10 + $('#inputvideomin').val()/60,
-			inputsports = $('#inputsportshour').val()/10*10 + $('#inputsportsmin').val()/60,
+		var inputsleep = ($('#inputsleephour').val(),
+			inputwork = $('#inputworkhour').val(),
+			inputshop = $('#inputshophour').val(),
+			inputtv = $('#inputtvhour').val(),
+			inputvideo = $('#inputvideohour').val(),
+			inputsports = $('#inputsportshour').val(),
 			inputage = $('#inputage').val(),
 			inputgender = $('#inputgender').val(),
 			inputworkstatus = $('#inputworkstatus').val();
