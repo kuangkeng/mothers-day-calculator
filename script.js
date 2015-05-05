@@ -140,7 +140,7 @@ submitHandler: function(form) {
 //setting the input variables
 		var inputcooking = $('#inputcookinghour').val()*data.cooking,
 			inputdriving = $('#inputdrivinghour').val()*data.driving,
-			inputhomework = $('#inputhomeworkhour').val()*data.homework,
+			inputhomework = $('#inputhomeworkhour').val()*data.homeworksec,
 			inputkids = $('#inputkidshour').val()*data.kids,
 			inputcleaning = $('#inputcleaninghour').val()*data.cleaning,
 			inputplanning = $('#inputplanninghour').val()*data.planning,
@@ -151,12 +151,49 @@ submitHandler: function(form) {
 			inputfinding = $('#inputfindinghour').val()*data.finding,
 			inputcounseling = $('#inputcounselinghour').val()*data.counseling;
 
-		var totalwage = inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling;
+		var totalwage = inputcooking + inputdriving + 
 
-console.log($('#inputcookinghour').val());			
-console.log(data.cooking);
-console.log(inputcooking);
-console.log(inputcounseling);
+inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling;
+
+console.log("input = " + $('#inputcookinghour').val());
+console.log("input = " + $('#inputdrivinghour').val());
+console.log("input = " + $('#inputhomeworkhour').val());
+console.log("input = " + $('#inputkidshour').val());
+console.log("input = " + $('#inputcleaninghour').val());
+console.log("input = " + $('#inputplanninghour').val());	
+console.log("input = " + $('#inputshoppinghour').val());
+console.log("input = " + $('#inputfinanceshour').val());
+console.log("input = " + $('#inputyardhour').val());
+console.log("input = " + $('#inputdecoratinghour').val());
+console.log("input = " + $('#inputfindinghour').val());
+console.log("input = " + $('#inputcounselinghour').val());
+
+console.log("data = " + data.cooking);
+console.log("data = " + data.driving);
+console.log("data = " + data.homeworksec);
+console.log("data = " + data.kids);
+console.log("data = " + data.cleaning);
+console.log("data = " + data.planning);
+console.log("data = " + data.shopping);
+console.log("data = " + data.finances);
+console.log("data = " + data.yard);
+console.log("data = " + data.decorating);
+console.log("data = " + data.finding);
+console.log("data = " + data.counseling);
+
+console.log("sum = " + inputcooking);
+console.log("sum = " + inputdriving);
+console.log("sum = " + inputhomework);
+console.log("sum = " + inputkids);
+console.log("sum = " + inputcleaning);
+console.log("sum = " + inputplanning);
+console.log("sum = " + inputshoping);
+console.log("sum = " + inputfinances);
+console.log("sum = " + inputyard);
+console.log("sum = " + inputdecorating);
+console.log("sum = " + inputfinding);
+console.log("sum = " + inputcounseling);
+				
 console.log("Total Wage is: " + totalwage);
 
 $("#result").show();
