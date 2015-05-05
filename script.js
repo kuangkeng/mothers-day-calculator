@@ -140,19 +140,19 @@ submitHandler: function(form) {
 //setting the input variables
 		var inputcooking = ($('#inputcookinghour').val()*data.cooking),
 			inputdriving = ($('#inputdrivinghour').val()*data.driving),
-			inputhomework = ($('#inputhomeworkhour').val()*data.homeworksec).toFixed(4),
-			inputkids = ($('#inputkidshour').val()*data.kids).toFixed(4),
-			inputcleaning = ($('#inputcleaninghour').val()*data.cleaning).toFixed(4),
-			inputplanning = ($('#inputplanninghour').val()*data.planning).toFixed(4),
-			inputshopping = ($('#inputshoppinghour').val()*data.shopping).toFixed(4),
-			inputfinances = ($('#inputfinanceshour').val()*data.finances).toFixed(4),
-			inputyard = ($('#inputyardhour').val()*data.yard).toFixed(4),
-			inputdecorating = ($('#inputdecoratinghour').val()*data.decorating).toFixed(4),
-			inputfinding = ($('#inputfindinghour').val()*data.finding).toFixed(4),
-			inputcounseling = ($('#inputcounselinghour').val()*data.counseling).toFixed(4);
-var totalwagetest = 12*(inputcooking + inputdriving);
-		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling);
-		var totalwageround = totalwage.toFixed(2);
+			inputhomework = ($('#inputhomeworkhour').val()*data.homeworksec),
+			inputkids = ($('#inputkidshour').val()*data.kids),
+			inputcleaning = ($('#inputcleaninghour').val()*data.cleaning),
+			inputplanning = ($('#inputplanninghour').val()*data.planning),
+			inputshopping = ($('#inputshoppinghour').val()*data.shopping),
+			inputfinances = ($('#inputfinanceshour').val()*data.finances),
+			inputyard = ($('#inputyardhour').val()*data.yard),
+			inputdecorating = ($('#inputdecoratinghour').val()*data.decorating),
+			inputfinding = ($('#inputfindinghour').val()*data.finding),
+			inputcounseling = ($('#inputcounselinghour').val()*data.counseling);
+		
+		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling),
+			totalwageround = totalwage.toFixed(2);
 
 console.log("input = " + $('#inputcookinghour').val());
 console.log("input = " + $('#inputdrivinghour').val());
@@ -193,7 +193,7 @@ console.log("sum = " + inputdecorating);
 console.log("sum = " + inputfinding);
 console.log("sum = " + inputcounseling);
 				
-console.log("totalwagetest is: " + totalwagetest);
+console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
 
 $("#result").show();
