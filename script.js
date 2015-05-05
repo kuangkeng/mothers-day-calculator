@@ -151,7 +151,7 @@ submitHandler: function(form) {
 			inputfinding = ($('#inputfindinghour').val()*data.finding).toFixed(2),
 			inputcounseling = ($('#inputcounselinghour').val()*data.counseling).toFixed(2);
 
-		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling).toFixed(2);
+		var totalwage = (12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling)).toFixed(2);
 
 console.log("input = " + $('#inputcookinghour').val());
 console.log("input = " + $('#inputdrivinghour').val());
