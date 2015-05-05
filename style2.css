@@ -1,0 +1,52 @@
+body {
+  width:737px;
+  font-family:'Times New Roman';
+  font-size:16px;
+  line-height:26px;
+  margin:30px auto;
+  border:solid 1px #f0f1f1;
+      }  
+
+
+table,td
+{
+border-collapse:collapse;
+}
+
+table
+{
+  width:100%;
+}
+
+#label
+{
+  width:80%;
+}
+
+#inputbox
+{
+  width:20%;
+}
+
+#bls
+{
+  margin-left:3%  
+}
+
+input[type=text] {
+ width:30px; 
+}
+
+#button {
+ width: 100px;  
+ font-size: 20px;
+ float: right;
+ margin-right:20%;
+}
+
+
+#bottomform {
+  width: 54%;
+  margin: 0 auto;
+  text-align: center;
+}
