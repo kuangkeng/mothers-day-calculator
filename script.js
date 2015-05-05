@@ -195,6 +195,8 @@ console.log("sum = " + inputcounseling);
 console.log("Total Wage is: " + totalwage);
 
 $("#result").show();
+$("#totalnumber").text(totalwage);
+$("#button").hide();
 
     }
 
