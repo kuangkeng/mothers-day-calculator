@@ -138,8 +138,8 @@ $(document).ready(function(){
 submitHandler: function(form) {
 
 //setting the input variables
-		var inputcooking = ($('#inputcookinghour').val()*data.cooking).toFixed(4),
-			inputdriving = ($('#inputdrivinghour').val()*data.driving).toFixed(4),
+		var inputcooking = ($('#inputcookinghour').val()*data.cooking),
+			inputdriving = ($('#inputdrivinghour').val()*data.driving),
 			inputhomework = ($('#inputhomeworkhour').val()*data.homeworksec).toFixed(4),
 			inputkids = ($('#inputkidshour').val()*data.kids).toFixed(4),
 			inputcleaning = ($('#inputcleaninghour').val()*data.cleaning).toFixed(4),
