@@ -138,18 +138,18 @@ $(document).ready(function(){
 submitHandler: function(form) {
 
 //setting the input variables
-		var inputcooking = $('#inputcookinghour').val()/10*10*data.cooking,
-			inputdriving = $('#inputdrivinghour').val()/10*10*data.driving,
-			inputhomework = $('#inputhomeworkhour').val()/10*10*data.homeworksec,
-			inputkids = $('#inputkidshour').val()/10*10*data.kids,
-			inputcleaning = $('#inputcleaninghour').val()/10*10*data.cleaning,
-			inputplanning = $('#inputplanninghour').val()/10*10*data.planning,
-			inputshopping = $('#inputshoppinghour').val()/10*10*data.shopping,
-			inputfinances = $('#inputfinanceshour').val()/10*10*data.finances,
-			inputyard = $('#inputyardhour').val()/10*10*data.yard,
-			inputdecorating = $('#inputdecoratinghour').val()/10*10*data.decorating,
-			inputfinding = $('#inputfindinghour').val()/10*10*data.finding,
-			inputcounseling = $('#inputcounselinghour').val()/10*10*data.counseling;
+		var inputcooking = $('#inputcookinghour').val()*data.cooking/10*10,
+			inputdriving = $('#inputdrivinghour').val()*data.driving/10*10,
+			inputhomework = $('#inputhomeworkhour').val()*data.homeworksec/10*10,
+			inputkids = $('#inputkidshour').val()*data.kids/10*10,
+			inputcleaning = $('#inputcleaninghour').val()*data.cleaning/10*10,
+			inputplanning = $('#inputplanninghour').val()*data.planning/10*10,
+			inputshopping = $('#inputshoppinghour').val()*data.shopping/10*10,
+			inputfinances = $('#inputfinanceshour').val()*data.finances/10*10,
+			inputyard = $('#inputyardhour').val()*data.yard/10*10,
+			inputdecorating = $('#inputdecoratinghour').val()*data.decorating/10*10,
+			inputfinding = $('#inputfindinghour').val()*data.finding/10*10,
+			inputcounseling = $('#inputcounselinghour').val()*data.counseling/10*10;
 
 		var totalwage = 12*(inputcooking + inputdriving + inputhomework + inputkids + inputcleaning + inputplanning + inputshopping + inputfinances + inputyard + inputdecorating + inputfinding + inputcounseling);
 
