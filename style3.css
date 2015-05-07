@@ -1,5 +1,6 @@
 body {
-  width:737px;
+  width: 100%;
+  max-width: 737px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size:16px;
   line-height:26px;
@@ -27,7 +28,7 @@ table
   width:100%;
 }
 
-#question
+#question, #td_bls
 {
   width:83%;
   background-color: #FFEBF3;
@@ -38,7 +39,7 @@ table
   box-shadow:         2px 2px 2px 2px #ccc;
 }
 
-#inputbox
+#inputbox, #td_blsrate
 {
   text-align:left;
   background-color: #FCF1DC;
@@ -46,6 +47,11 @@ table
   -moz-box-shadow:    1px 1px 1px 1px #ccc;
   -webkit-box-shadow: 1px 1px 1px 1px #ccc;
   box-shadow:         2px 2px 2px 2px #ccc;
+}
+
+#td_blsrate
+{
+  text-align:center !important;
 }
 
 #inputcookinghour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour
