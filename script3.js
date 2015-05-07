@@ -1,4 +1,4 @@
-$("#result, #bottomform, #occupation, #bls").hide();
+$("#result, #bottomform, #occupation, #bls, #blsrate").hide();
 
 var data = {
 			  cooking: 20.01,
@@ -147,7 +147,7 @@ console.log("wage = " + findingwage);
 console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
 
-$("#result, #bottomform, #occupation, #bls").show();
+$("#result, #bottomform, #occupation, #bls, #blsrate").show();
 $("#totalnumber").text(totalwageround);
 $("#occupation").text("general maneger");
 $("#button").hide();
