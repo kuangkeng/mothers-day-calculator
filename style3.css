@@ -54,7 +54,7 @@ table
   text-align:center !important;
 }
 
-#inputcookinghour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour
+#inputcookinghour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour, #inputworkstatus
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   border:0px;
