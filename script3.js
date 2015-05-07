@@ -30,9 +30,7 @@ submitHandler: function(form) {
 			inputshopping = $('#inputshoppinghour').val(),
 			inputfinances = $('#inputfinanceshour').val(),
 			inputyard = $('#inputyardhour').val(),
-			inputdecorating = $('#inputdecoratinghour').val(),
 			inputfinding = $('#inputfindinghour').val(),
-			inputcounseling = $('#inputcounselinghour').val();
 		
 //convert the input into hours
 		if(inputcooking=="Never"){var cookinghour=0;}
@@ -49,6 +47,11 @@ submitHandler: function(form) {
 		if(inputhomework=="Seldom"){var homeworkhour=1;}
 		if(inputhomework=="Always"){var homeworkhour=5;}
 		if(inputhomework=="All the time!"){var homeworkhour=14;}
+
+		if(inputkids=="Never"){var kidshour=0;}
+		if(inputkids=="Seldom"){var kidshour=1;}
+		if(inputkids=="Always"){var kidshour=5;}
+		if(inputkids=="All the time!"){var kidshour=14;}
 
 		if(inputcleaning=="Never"){var cleaninghour=0;}
 		if(inputcleaning=="Seldom"){var cleaninghour=1;}
@@ -84,6 +87,7 @@ submitHandler: function(form) {
 		var cookingwage = cookinghour*data.cooking
 			drivingwage  = drivinghour*data.driving
 			homeworkwage = homeworkhour*data.homework
+			kidswage = kidshour*data.kids
 			cleaningwage = cleaninghour*data.cleaning
 			planningwage = planninghour*data.planning
 			shoppingwage = shoppinghour*data.shopping
