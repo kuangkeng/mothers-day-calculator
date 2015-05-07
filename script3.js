@@ -113,7 +113,7 @@ console.log("input = " + $('#inputfindinghour').val());
 
 console.log("data = " + data.cooking);
 console.log("data = " + data.driving);
-console.log("data = " + data.homeworksec);
+console.log("data = " + data.homework);
 console.log("data = " + data.kids);
 console.log("data = " + data.cleaning);
 console.log("data = " + data.planning);
