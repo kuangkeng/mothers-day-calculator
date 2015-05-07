@@ -30,7 +30,7 @@ submitHandler: function(form) {
 			inputshopping = $('#inputshoppinghour').val(),
 			inputfinances = $('#inputfinanceshour').val(),
 			inputyard = $('#inputyardhour').val(),
-			inputfinding = $('#inputfindinghour').val(),
+			inputfinding = $('#inputfindinghour').val();
 		
 //convert the input into hours
 		if(inputcooking=="Never"){var cookinghour=0;}
