@@ -36,59 +36,59 @@ submitHandler: function(form) {
 		
 //convert the input into hours
 		if(inputtask_1=="Never"){var task_1hour=0;}
-		if(inputtask_1=="Seldom"){var task_1hour=1;}
-		if(inputtask_1=="Always"){var task_1hour=5;}
-		if(inputtask_1=="All the time!"){var task_1hour=14;}
+		if(inputtask_1=="Rarely"){var task_1hour=1;}
+		if(inputtask_1=="Sometimes"){var task_1hour=5;}
+		if(inputtask_1=="Always"){var task_1hour=14;}
 
 		if(inputtask_2=="Never"){var task_2hour=0;}
-		if(inputtask_2=="Seldom"){var task_2hour=1;}
-		if(inputtask_2=="Always"){var task_2hour=5;}
-		if(inputtask_2=="All the time!"){var task_2hour=14;}
+		if(inputtask_2=="Rarely"){var task_2hour=1;}
+		if(inputtask_2=="Sometimes"){var task_2hour=5;}
+		if(inputtask_2=="Always"){var task_2hour=14;}
 
 		if(inputtask_3=="Never"){var task_3hour=0;}
-		if(inputtask_3=="Seldom"){var task_3hour=1;}
-		if(inputtask_3=="Always"){var task_3hour=5;}
-		if(inputtask_3=="All the time!"){var task_3hour=14;}
+		if(inputtask_3=="Rarely"){var task_3hour=1;}
+		if(inputtask_3=="Sometimes"){var task_3hour=5;}
+		if(inputtask_3=="Always"){var task_3hour=14;}
 
 		if(inputtask_4=="Never"){var task_4hour=0;}
-		if(inputtask_4=="Seldom"){var task_4hour=1;}
-		if(inputtask_4=="Always"){var task_4hour=5;}
-		if(inputtask_4=="All the time!"){var task_4hour=14;}
+		if(inputtask_4=="Rarely"){var task_4hour=1;}
+		if(inputtask_4=="Sometimes"){var task_4hour=5;}
+		if(inputtask_4=="Always"){var task_4hour=14;}
 
 		if(inputtask_5=="Never"){var task_5hour=0;}
-		if(inputtask_5=="Seldom"){var task_5hour=1;}
-		if(inputtask_5=="Always"){var task_5hour=5;}
-		if(inputtask_5=="All the time!"){var task_5hour=14;}
+		if(inputtask_5=="Rarely"){var task_5hour=1;}
+		if(inputtask_5=="Sometimes"){var task_5hour=5;}
+		if(inputtask_5=="Always"){var task_5hour=14;}
 
 		if(inputtask_6=="Never"){var task_6hour=0;}
-		if(inputtask_6=="Seldom"){var task_6hour=1;}
-		if(inputtask_6=="Always"){var task_6hour=5;}
-		if(inputtask_6=="All the time!"){var task_6hour=14;}
+		if(inputtask_6=="Rarely"){var task_6hour=1;}
+		if(inputtask_6=="Sometimes"){var task_6hour=5;}
+		if(inputtask_6=="Always"){var task_6hour=14;}
 
 		if(inputtask_7=="Never"){var task_7hour=0;}
-		if(inputtask_7=="Seldom"){var task_7hour=1;}
-		if(inputtask_7=="Always"){var task_7hour=5;}
-		if(inputtask_7=="All the time!"){var task_7hour=14;}
+		if(inputtask_7=="Rarely"){var task_7hour=1;}
+		if(inputtask_7=="Sometimes"){var task_7hour=5;}
+		if(inputtask_7=="Always"){var task_7hour=14;}
 
 		if(inputtask_8=="Never"){var task_8hour=0;}
-		if(inputtask_8=="Seldom"){var task_8hour=1;}
-		if(inputtask_8=="Always"){var task_8hour=5;}
-		if(inputtask_8=="All the time!"){var task_8hour=14;}
+		if(inputtask_8=="Rarely"){var task_8hour=1;}
+		if(inputtask_8=="Sometimes"){var task_8hour=5;}
+		if(inputtask_8=="Always"){var task_8hour=14;}
 
 		if(inputtask_10=="Never"){var task_10hour=0;}
-		if(inputtask_10=="Seldom"){var task_10hour=1;}
-		if(inputtask_10=="Always"){var task_10hour=5;}
-		if(inputtask_10=="All the time!"){var task_10hour=14;}
+		if(inputtask_10=="Rarely"){var task_10hour=1;}
+		if(inputtask_10=="Sometimes"){var task_10hour=5;}
+		if(inputtask_10=="Always"){var task_10hour=14;}
 
 		if(inputtask_9=="Never"){var task_9hour=0;}
-		if(inputtask_9=="Seldom"){var task_9hour=1;}
-		if(inputtask_9=="Always"){var task_9hour=5;}
-		if(inputtask_9=="All the time!"){var task_9hour=14;}
+		if(inputtask_9=="Rarely"){var task_9hour=1;}
+		if(inputtask_9=="Sometimes"){var task_9hour=5;}
+		if(inputtask_9=="Always"){var task_9hour=14;}
   
-    if(inputtask_11=="Never"){var task_11hour=0;}
-		if(inputtask_11=="Seldom"){var task_11hour=1;}
-		if(inputtask_11=="Always"){var task_11hour=5;}
-		if(inputtask_11=="All the time!"){var task_11hour=14;}
+    	if(inputtask_11=="Never"){var task_11hour=0;}
+		if(inputtask_11=="Rarely"){var task_11hour=1;}
+		if(inputtask_11=="Sometimes"){var task_11hour=5;}
+		if(inputtask_11=="Always"){var task_11hour=14;}
 
 //convert hours into wage
 		var task_1wage = task_1hour*data.task_1
@@ -106,6 +106,38 @@ submitHandler: function(form) {
 //add up the total wage
 		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage + task_11wage),
 			totalwageround = totalwage.toFixed(2);
+
+		if(totalwageround<30000){var occupation="cook";}
+		if(totalwageround>=30000 && totalwageround<40000){var occupation="travel guide";}
+		if(totalwageround>=40000 && totalwageround<50000){var occupation="sheet metal worker";}
+		if(totalwageround>=50000 && totalwageround<60000){var occupation="editor";}
+		if(totalwageround>=60000 && totalwageround<70000){var occupation="financial specialist";}
+		if(totalwageround>=70000 && totalwageround<80000){var occupation="biological scientist";}
+		if(totalwageround>=80000 && totalwageround<90000){var occupation="biochemists";}
+		if(totalwageround>=90000 && totalwageround<100000){var occupation="economist";}
+		if(totalwageround>=100000 && totalwageround<110000){var occupation="aerospace engineer";}
+		if(totalwageround>=110000 && totalwageround<120000){var occupation="judge or magistrate";}
+		if(totalwageround>=120000 && totalwageround<130000){var occupation="marketing manager";}
+		if(totalwageround>=130000 && totalwageround<170000){var occupation="dentist";}
+		if(totalwageround>=170000){var occupation="psychiatrist";}
+
+$("#result, #bottomform, #occupation, #td_bls, #td_blsrate").show();
+$("#task_1hour").text(task_1hour);
+$("#task_2hour").text(task_2hour);
+$("#task_3hour").text(task_3hour);
+$("#task_4hour").text(task_4hour);
+$("#task_5hour").text(task_5hour);
+$("#task_6hour").text(task_6hour);
+$("#task_7hour").text(task_7hour);
+$("#task_8hour").text(task_8hour);
+$("#task_9hour").text(task_9hour);
+$("#task_10hour").text(task_10hour);
+$("#task_11hour").text(task_11hour);
+$("#totalnumber").text(totalwageround);
+$("#occupation").text(occupation);
+$("#button").hide();
+
+
 
 //verify the variables
 console.log("input = " + $('#inputtask_1hour').val());
@@ -159,21 +191,7 @@ console.log("wage = " + task_11wage);
 console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
 
-$("#result, #bottomform, #occupation, #td_bls, #td_blsrate").show();
-$("#task_1hour").text(task_1hour);
-$("#task_2hour").text(task_2hour);
-$("#task_3hour").text(task_3hour);
-$("#task_4hour").text(task_4hour);
-$("#task_5hour").text(task_5hour);
-$("#task_6hour").text(task_6hour);
-$("#task_7hour").text(task_7hour);
-$("#task_8hour").text(task_8hour);
-$("#task_9hour").text(task_9hour);
-$("#task_10hour").text(task_10hour);
-$("#task_11hour").text(task_11hour);
-$("#totalnumber").text(totalwageround);
-$("#occupation").text("general manager");
-$("#button").hide();
+
     }
 
 })});
