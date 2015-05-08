@@ -5,6 +5,7 @@ body {
   font-size:16px;
   line-height:26px;
   margin:30px auto;
+  border:solid 1px #f0f1f1;
       }  
 
 table,td
@@ -134,4 +135,9 @@ input[type=text] {
   -moz-box-shadow:    3px 3px 3px 3px #ccc;
   -webkit-box-shadow: 3px 3px 3px 3px #ccc;
   box-shadow:         3px 3px 3px 3px #ccc;
+}
+
+#totalnumber{
+  font-size:35px;
+  color:#DE548B;
 }

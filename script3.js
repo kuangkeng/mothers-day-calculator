@@ -152,7 +152,7 @@ $("#task_8hour").text(task_8hour);
 $("#task_9hour").text(task_9hour);
 $("#task_10hour").text(task_10hour);
 $("#task_11hour").text(task_11hour);
-$("#totalnumber").text(totalwageround);
+$("#totalnumber").text("$"+totalwageround);
 $("#occupation").text(occupation);
 $("#button").hide();
 
