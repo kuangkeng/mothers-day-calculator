@@ -1,16 +1,17 @@
 $("#result, #bottomform, #occupation, #td_bls, #td_blsrate").hide();
 
 var data = {
-			  task_1: 20.01,
-			  task_2: 11.16,
-			  task_3: 14.62,
-			  task_4: 9.48,
-			  task_5: 10.98,
-			  task_6: 22.35,
-			  task_7: 9.83,
-			  task_8: 31.7,
-			  task_9: 11.68,
-			  task_10: 21.43,
+			  task_1: 10.98,
+			  task_2: 20.01,
+			  task_3: 11.68,
+			  task_4: 9.77,
+			  task_5: 22.35,
+			  task_6: 55.44,
+			  task_7: 9.48,
+			  task_8: 21.43,
+			  task_9: 14.62,
+			  task_10: 20.43,
+  			task_11: 11.16,
 			};
 
 $(document).ready(function(){
@@ -30,7 +31,8 @@ submitHandler: function(form) {
 			inputtask_7 = $('#inputtask_7hour').val(),
 			inputtask_8 = $('#inputtask_8hour').val(),
 			inputtask_9 = $('#inputtask_9hour').val(),
-			inputtask_10 = $('#inputtask_10hour').val();
+			inputtask_10 = $('#inputtask_10hour').val(),
+        inputtask_11 = $('#inputtask_11hour').val();
 		
 //convert the input into hours
 		if(inputtask_1=="Never"){var task_1hour=0;}
@@ -82,6 +84,11 @@ submitHandler: function(form) {
 		if(inputtask_9=="Seldom"){var task_9hour=1;}
 		if(inputtask_9=="Always"){var task_9hour=5;}
 		if(inputtask_9=="All the time!"){var task_9hour=14;}
+  
+    if(inputtask_11=="Never"){var task_11hour=0;}
+		if(inputtask_11=="Seldom"){var task_11hour=1;}
+		if(inputtask_11=="Always"){var task_11hour=5;}
+		if(inputtask_11=="All the time!"){var task_11hour=14;}
 
 //convert hours into wage
 		var task_1wage = task_1hour*data.task_1
@@ -94,9 +101,10 @@ submitHandler: function(form) {
 			task_8wage = task_8hour*data.task_8
 			task_10wage = task_10hour*data.task_10
 			task_9wage = task_9hour*data.task_9
+      task_11wage = task_10hour*data.task_11
 
 //add up the total wage
-		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage),
+		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage + task_11wage),
 			totalwageround = totalwage.toFixed(2);
 
 //verify the variables
@@ -110,6 +118,7 @@ console.log("input = " + $('#inputtask_7hour').val());
 console.log("input = " + $('#inputtask_8hour').val());
 console.log("input = " + $('#inputtask_9hour').val());
 console.log("input = " + $('#inputtask_10hour').val());
+  console.log("input = " + $('#inputtask_11hour').val());
 
 console.log("data = " + data.task_1);
 console.log("data = " + data.task_2);
@@ -121,6 +130,7 @@ console.log("data = " + data.task_7);
 console.log("data = " + data.task_8);
 console.log("data = " + data.task_9);
 console.log("data = " + data.task_10);
+console.log("data = " + data.task_11);
 
 console.log("hour = " + task_1hour);
 console.log("hour = " + task_2hour);
@@ -132,6 +142,7 @@ console.log("hour = " + task_7hour);
 console.log("hour = " + task_8hour);
 console.log("hour = " + task_9hour);
 console.log("hour = " + task_10hour);
+console.log("hour = " + task_11hour);
 
 console.log("wage = " + task_1wage);
 console.log("wage = " + task_2wage);
@@ -143,6 +154,7 @@ console.log("wage = " + task_7wage);
 console.log("wage = " + task_8wage);
 console.log("wage = " + task_9wage);
 console.log("wage = " + task_10wage);
+console.log("wage = " + task_11wage);
 
 console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
@@ -158,10 +170,10 @@ $("#task_7hour").text(task_7hour);
 $("#task_8hour").text(task_8hour);
 $("#task_9hour").text(task_9hour);
 $("#task_10hour").text(task_10hour);
+$("#task_11hour").text(task_11hour);
 $("#totalnumber").text(totalwageround);
 $("#occupation").text("general manager");
 $("#button").hide();
-
     }
 
 })});
