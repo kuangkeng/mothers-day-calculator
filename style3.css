@@ -56,7 +56,7 @@ table
   text-align:center !important;
 }
 
-#inputtask_1hour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour, #inputworkstatus
+#inputtask_1hour, #inputtask_2hour, #inputtask_3hour, #inputtask_5hour, #inputtask_6hour, #inputtask_7hour, #inputtask_8hour, #inputtask_10hour, #inputtask_9hour, #inputtask_4hour, #inputworkstatus
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   border:0px;
