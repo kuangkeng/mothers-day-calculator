@@ -105,7 +105,7 @@ submitHandler: function(form) {
 
 //add up the total wage
 		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage + task_11wage),
-			totalwageround = totalwage.toFixed(2);
+			totalwageround = totalwage.toFixed(0);
 
 		if(totalwageround<30000){var occupation="cook";}
 		if(totalwageround>=30000 && totalwageround<40000){var occupation="travel guide";}
