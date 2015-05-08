@@ -209,6 +209,8 @@ console.log("wage = " + task_11wage);
 
 console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
+console.log("occupation is: " + occupation);
+
 
 
     }
