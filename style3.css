@@ -16,7 +16,9 @@ border-collapse: collapse;
 
 table
 {
-  width:100%;
+  width:90%;
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 #spacer{
@@ -54,7 +56,7 @@ table
   text-align:center !important;
 }
 
-#inputcookinghour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour, #inputworkstatus
+#inputtask_1hour, #inputdrivinghour, #inputhomeworkhour, #inputcleaninghour, #inputplanninghour, #inputshoppinghour, #inputfinanceshour, #inputfindinghour, #inputyardhour, #inputkidshour, #inputworkstatus
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   border:0px;

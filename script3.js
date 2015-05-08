@@ -1,7 +1,7 @@
 $("#result, #bottomform, #occupation, #td_bls, #td_blsrate").hide();
 
 var data = {
-			  cooking: 20.01,
+			  task_1: 20.01,
 			  driving: 11.16,
 			  homework: 14.62,
 			  kids: 9.48,
@@ -21,7 +21,7 @@ $(document).ready(function(){
 submitHandler: function(form) {
 
 //grab the input
-		var inputcooking = $('#inputcookinghour').val(),
+		var inputtask_1 = $('#inputtask_1hour').val(),
 			inputdriving = $('#inputdrivinghour').val(),
 			inputhomework = $('#inputhomeworkhour').val(),
 			inputkids = $('#inputkidshour').val(),
@@ -33,10 +33,10 @@ submitHandler: function(form) {
 			inputfinding = $('#inputfindinghour').val();
 		
 //convert the input into hours
-		if(inputcooking=="Never"){var cookinghour=0;}
-		if(inputcooking=="Seldom"){var cookinghour=1;}
-		if(inputcooking=="Always"){var cookinghour=5;}
-		if(inputcooking=="All the time!"){var cookinghour=14;}
+		if(inputtask_1=="Never"){var task_1hour=0;}
+		if(inputtask_1=="Seldom"){var task_1hour=1;}
+		if(inputtask_1=="Always"){var task_1hour=5;}
+		if(inputtask_1=="All the time!"){var task_1hour=14;}
 
 		if(inputdriving=="Never"){var drivinghour=0;}
 		if(inputdriving=="Seldom"){var drivinghour=1;}
@@ -84,7 +84,7 @@ submitHandler: function(form) {
 		if(inputyard=="All the time!"){var yardhour=14;}
 
 //convert hours into wage
-		var cookingwage = cookinghour*data.cooking
+		var task_1wage = task_1hour*data.task_1
 			drivingwage  = drivinghour*data.driving
 			homeworkwage = homeworkhour*data.homework
 			kidswage = kidshour*data.kids
@@ -96,11 +96,11 @@ submitHandler: function(form) {
 			yardwage = yardhour*data.yard
 
 //add up the total wage
-		var totalwage = 52*(cookingwage + drivingwage + homeworkwage + kidswage + cleaningwage + planningwage + shoppingwage + financeswage + yardwage + findingwage),
+		var totalwage = 52*(task_1wage + drivingwage + homeworkwage + kidswage + cleaningwage + planningwage + shoppingwage + financeswage + yardwage + findingwage),
 			totalwageround = totalwage.toFixed(2);
 
 //verify the variables
-console.log("input = " + $('#inputcookinghour').val());
+console.log("input = " + $('#inputtask_1hour').val());
 console.log("input = " + $('#inputdrivinghour').val());
 console.log("input = " + $('#inputhomeworkhour').val());
 console.log("input = " + $('#inputkidshour').val());
@@ -111,7 +111,7 @@ console.log("input = " + $('#inputfinanceshour').val());
 console.log("input = " + $('#inputyardhour').val());
 console.log("input = " + $('#inputfindinghour').val());
 
-console.log("data = " + data.cooking);
+console.log("data = " + data.task_1);
 console.log("data = " + data.driving);
 console.log("data = " + data.homework);
 console.log("data = " + data.kids);
@@ -122,7 +122,7 @@ console.log("data = " + data.finances);
 console.log("data = " + data.yard);
 console.log("data = " + data.finding);
 
-console.log("hour = " + cookinghour);
+console.log("hour = " + task_1hour);
 console.log("hour = " + drivinghour);
 console.log("hour = " + homeworkhour);
 console.log("hour = " + kidshour);
@@ -133,7 +133,7 @@ console.log("hour = " + financeshour);
 console.log("hour = " + yardhour);
 console.log("hour = " + findinghour);
 
-console.log("wage = " + cookingwage);
+console.log("wage = " + task_1wage);
 console.log("wage = " + drivingwage);
 console.log("wage = " + homeworkwage);
 console.log("wage = " + kidswage);
@@ -148,6 +148,16 @@ console.log("totalwage is: " + totalwage);
 console.log("totalwageround is: " + totalwageround);
 
 $("#result, #bottomform, #occupation, #td_bls, #td_blsrate").show();
+$("#task_1hour").text(task_1hour);
+$("#drivinghour").text(drivinghour);
+$("#homeworkhour").text(homeworkhour);
+$("#kidshour").text(kidshour);
+$("#cleaninghour").text(cleaninghour);
+$("#planninghour").text(planninghour);
+$("#shoppinghour").text(shoppinghour);
+$("#financeshour").text(financeshour);
+$("#yardhour").text(yardhour);
+$("#findinghour").text(findinghour);
 $("#totalnumber").text(totalwageround);
 $("#occupation").text("general manager");
 $("#button").hide();
