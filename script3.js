@@ -126,19 +126,19 @@ function addThousandsSeparator(input) {
   
   
   
-		if(totalwageround<30000){var occupation="cook";}
-		if(totalwageround>=30000 && totalwageround<40000){var occupation="travel guide";}
-		if(totalwageround>=40000 && totalwageround<50000){var occupation="sheet metal worker";}
-		if(totalwageround>=50000 && totalwageround<60000){var occupation="editor";}
-		if(totalwageround>=60000 && totalwageround<70000){var occupation="financial specialist";}
-		if(totalwageround>=70000 && totalwageround<80000){var occupation="biological scientist";}
-		if(totalwageround>=80000 && totalwageround<90000){var occupation="biochemists";}
-		if(totalwageround>=90000 && totalwageround<100000){var occupation="economist";}
-		if(totalwageround>=100000 && totalwageround<110000){var occupation="aerospace engineer";}
-		if(totalwageround>=110000 && totalwageround<120000){var occupation="judge or magistrate";}
-		if(totalwageround>=120000 && totalwageround<130000){var occupation="marketing manager";}
-		if(totalwageround>=130000 && totalwageround<170000){var occupation="dentist";}
-		if(totalwageround>=170000){var occupation="psychiatrist";}
+		if(totalwageround1<30000){var occupation="cook";}
+		if(totalwageround1>=30000 && totalwageround1<40000){var occupation="travel guide";}
+		if(totalwageround1>=40000 && totalwageround1<50000){var occupation="sheet metal worker";}
+		if(totalwageround1>=50000 && totalwageround1<60000){var occupation="editor";}
+		if(totalwageround1>=60000 && totalwageround1<70000){var occupation="financial specialist";}
+		if(totalwageround1>=70000 && totalwageround1<80000){var occupation="biological scientist";}
+		if(totalwageround1>=80000 && totalwageround1<90000){var occupation="biochemists";}
+		if(totalwageround1>=90000 && totalwageround1<100000){var occupation="economist";}
+		if(totalwageround1>=100000 && totalwageround1<110000){var occupation="aerospace engineer";}
+		if(totalwageround1>=110000 && totalwageround1<120000){var occupation="judge or magistrate";}
+		if(totalwageround1>=120000 && totalwageround1<130000){var occupation="marketing manager";}
+		if(totalwageround1>=130000 && totalwageround1<170000){var occupation="dentist";}
+		if(totalwageround1>=170000){var occupation="psychiatrist";}
 
 $("#result, #bottomform, #occupation, #td_bls, #td_blsrate, #note").show();
 $("#task_1hour").text(task_1hour);
