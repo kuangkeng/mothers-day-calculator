@@ -105,8 +105,27 @@ submitHandler: function(form) {
 
 //add up the total wage
 		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage + task_11wage),
-			totalwageround = totalwage.toFixed(0);
+			totalwageround1 = totalwage.toFixed(0);
+  
+  totalwageround = addThousandsSeparator(totalwageround1);
 
+  
+  
+  
+function addThousandsSeparator(input) {
+    var output = input
+    if (parseFloat(input)) {
+        input = new String(input); // so you can perform string operations
+        var parts = input.split("."); // remove the decimal part
+        parts[0] = parts[0].split("").reverse().join("").replace(/(\d{3})(?!$)/g, "$1,").split("").reverse().join("");
+        output = parts.join(".");
+    }
+
+    return output;
+}  
+  
+  
+  
 		if(totalwageround<30000){var occupation="cook";}
 		if(totalwageround>=30000 && totalwageround<40000){var occupation="travel guide";}
 		if(totalwageround>=40000 && totalwageround<50000){var occupation="sheet metal worker";}
