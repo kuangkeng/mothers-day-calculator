@@ -110,7 +110,21 @@ input[type=text] {
   text-align: center;
 }
 
-#reset, #sharebox{
+#reset {
+  font-family: GibsonLightRegular, sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 0px;
+  font-size:18px;
+  background-color: #DEFFEE;
+  padding: 10px;
+  margin-bottom: 30px;
+  -moz-box-shadow:    3px 3px 3px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+  box-shadow:         3px 3px 3px 3px #ccc;
+}
+
+#sharebox{
   font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
   border-radius: 5px;
@@ -127,13 +141,13 @@ input[type=text] {
 .twitter-share-button
 {
   float: left;
-  left-margin:10%;
+  left-margin:30%;
 }
 
 .facebook-share-button
 {
   float: right;
-  right-margin:10%;
+  right-margin:30%;
 
 }
 

@@ -158,8 +158,7 @@ $("#button").hide();
 
 //code for dynamic twitter message
 
-var twittermsg ="Happy Mother’s Day to me! I should be making $"+totalwageround+" a year, or as much as a "+occupation+", for all the work I do. Find out how much you should be pulling in with International Business Times’ Mother’s Day Salary Calculator.";
-
+var twittermsg ="Happy Mother’s Day to me! I should be making $"+totalwageround+" a year, or as much as a "+occupation+", for all the work I do. Calculate yours!";
 var twitterurl ='https://twitter.com/share?url=http://www.ibtimes.com/&text='+twittermsg+'&via=Ibtimes';
 console.log("twittermsg: " + twittermsg);
 console.log("twitterurl: " + twitterurl);
