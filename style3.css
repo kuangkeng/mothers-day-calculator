@@ -127,9 +127,8 @@ input[type=text] {
 #sharebox{
   font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
-  width: 70%;
+  width: 23%;
   border-radius: 5px;
-  border: 0px;
   font-size:18px;
   background-color: #DEFFEE;
   padding: 10px;
@@ -138,11 +137,6 @@ input[type=text] {
   -moz-box-shadow:    3px 3px 3px 3px #ccc;
   -webkit-box-shadow: 3px 3px 3px 3px #ccc;
   box-shadow:         3px 3px 3px 3px #ccc;
-}
-
-.twitter-share-button, .facebook-share-button
-{
-  display:inline;
 }
 
 #result {
