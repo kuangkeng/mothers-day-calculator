@@ -110,7 +110,7 @@ input[type=text] {
   text-align: center;
 }
 
-#reset{
+#reset, #sharebox{
   font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
   border-radius: 5px;
@@ -122,6 +122,19 @@ input[type=text] {
   -moz-box-shadow:    3px 3px 3px 3px #ccc;
   -webkit-box-shadow: 3px 3px 3px 3px #ccc;
   box-shadow:         3px 3px 3px 3px #ccc;
+}
+
+.twitter-share-button
+{
+  float: left;
+  left-margin:10%;
+}
+
+.facebook-share-button
+{
+  float: right;
+  right-margin:10%;
+
 }
 
 #result {

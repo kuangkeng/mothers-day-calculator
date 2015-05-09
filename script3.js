@@ -32,7 +32,7 @@ submitHandler: function(form) {
 			inputtask_8 = $('#inputtask_8hour').val(),
 			inputtask_9 = $('#inputtask_9hour').val(),
 			inputtask_10 = $('#inputtask_10hour').val(),
-        inputtask_11 = $('#inputtask_11hour').val();
+        	inputtask_11 = $('#inputtask_11hour').val();
 		
 //convert the input into hours
 		if(inputtask_1=="Never"){var task_1hour=0;}
@@ -75,16 +75,16 @@ submitHandler: function(form) {
 		if(inputtask_8=="Sometimes"){var task_8hour=5;}
 		if(inputtask_8=="Always"){var task_8hour=14;}
 
+		if(inputtask_9=="Never"){var task_9hour=0;}
+		if(inputtask_9=="Rarely"){var task_9hour=1;}
+		if(inputtask_9=="Sometimes"){var task_9hour=5;}
+		if(inputtask_9=="Always"){var task_9hour=14;}
+
 		if(inputtask_10=="Never"){var task_10hour=0;}
 		if(inputtask_10=="Rarely"){var task_10hour=1;}
 		if(inputtask_10=="Sometimes"){var task_10hour=5;}
 		if(inputtask_10=="Always"){var task_10hour=14;}
 
-		if(inputtask_9=="Never"){var task_9hour=0;}
-		if(inputtask_9=="Rarely"){var task_9hour=1;}
-		if(inputtask_9=="Sometimes"){var task_9hour=5;}
-		if(inputtask_9=="Always"){var task_9hour=14;}
-  
     	if(inputtask_11=="Never"){var task_11hour=0;}
 		if(inputtask_11=="Rarely"){var task_11hour=1;}
 		if(inputtask_11=="Sometimes"){var task_11hour=5;}
@@ -92,16 +92,16 @@ submitHandler: function(form) {
 
 //convert hours into wage
 		var task_1wage = task_1hour*data.task_1
-			task_2wage  = task_2hour*data.task_2
+			task_2wage = task_2hour*data.task_2
 			task_3wage = task_3hour*data.task_3
 			task_4wage = task_4hour*data.task_4
 			task_5wage = task_5hour*data.task_5
 			task_6wage = task_6hour*data.task_6
 			task_7wage = task_7hour*data.task_7
 			task_8wage = task_8hour*data.task_8
-			task_10wage = task_10hour*data.task_10
 			task_9wage = task_9hour*data.task_9
-      task_11wage = task_10hour*data.task_11
+			task_10wage = task_10hour*data.task_10
+      		task_11wage = task_11hour*data.task_11
 
 //add up the total wage
 		var totalwage = 52*(task_1wage + task_2wage + task_3wage + task_4wage + task_5wage + task_6wage + task_7wage + task_8wage + task_9wage + task_10wage + task_11wage),
@@ -156,6 +156,18 @@ $("#totalnumber").text("$"+totalwageround);
 $("#occupation").text(occupation);
 $("#button").hide();
 
+//code for dynamic twitter message
+
+var twittermsg ="Happy Mother’s Day to me! I should be making $"+totalwageround+" a year, or as much as a "+occupation+", for all the work I do. Find out how much you should be pulling in with International Business Times’ Mother’s Day Salary Calculator.";
+
+var twitterurl ='https://twitter.com/share?url=http://www.ibtimes.com/&text='+twittermsg+'&via=Ibtimes';
+console.log("twittermsg: " + twittermsg);
+console.log("twitterurl: " + twitterurl);
+
+$('a[href="https://twitter.com/share"]').each(function(){
+    $(this).prop('href', twitterurl);
+    });
+$.getScript('http://platform.twitter.com/widgets.js');
 
 
 //verify the variables
@@ -169,7 +181,7 @@ console.log("input = " + $('#inputtask_7hour').val());
 console.log("input = " + $('#inputtask_8hour').val());
 console.log("input = " + $('#inputtask_9hour').val());
 console.log("input = " + $('#inputtask_10hour').val());
-  console.log("input = " + $('#inputtask_11hour').val());
+console.log("input = " + $('#inputtask_11hour').val());
 
 console.log("data = " + data.task_1);
 console.log("data = " + data.task_2);
