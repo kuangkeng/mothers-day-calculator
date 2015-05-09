@@ -154,7 +154,7 @@ $("#task_10hour").text(task_10hour);
 $("#task_11hour").text(task_11hour);
 $("#totalnumber").text("$"+totalwageround);
 $("#occupation").text(occupation);
-$("#button").hide();
+$("#button, #holder").hide();
 
 //code for dynamic twitter message
 
