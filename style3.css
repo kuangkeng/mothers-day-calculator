@@ -127,28 +127,22 @@ input[type=text] {
 #sharebox{
   font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
+  width: 70%;
   border-radius: 5px;
   border: 0px;
   font-size:18px;
   background-color: #DEFFEE;
   padding: 10px;
-  margin-bottom: 30px;
+  margin:0px auto;
+  text-align: center;
   -moz-box-shadow:    3px 3px 3px 3px #ccc;
   -webkit-box-shadow: 3px 3px 3px 3px #ccc;
   box-shadow:         3px 3px 3px 3px #ccc;
 }
 
-.twitter-share-button
+.twitter-share-button, .facebook-share-button
 {
-  float: left;
-  left-margin:30%;
-}
-
-.facebook-share-button
-{
-  float: right;
-  right-margin:30%;
-
+  display:inline;
 }
 
 #result {

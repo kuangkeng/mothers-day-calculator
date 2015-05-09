@@ -1,4 +1,4 @@
-$("#result, #bottomform, #occupation, #td_bls, #td_blsrate, #note").hide();
+$("#result, #bottomform, #occupation, #td_bls, #td_blsrate, #note, #sharebox").hide();
 
 var data = {
 			  task_1: 10.98,
@@ -140,7 +140,7 @@ function addThousandsSeparator(input) {
 		if(totalwageround1>=130000 && totalwageround1<170000){var occupation="dentist";}
 		if(totalwageround1>=170000){var occupation="psychiatrist";}
 
-$("#result, #bottomform, #occupation, #td_bls, #td_blsrate, #note").show();
+$("#result, #bottomform, #occupation, #td_bls, #td_blsrate, #note, #sharebox").show();
 $("#task_1hour").text(task_1hour);
 $("#task_2hour").text(task_2hour);
 $("#task_3hour").text(task_3hour);
