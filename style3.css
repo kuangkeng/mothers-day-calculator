@@ -1,11 +1,13 @@
 body {
   width: 100%;
   max-width: 737px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: GibsonLightRegular, sans-serif;
   font-size:16px;
-  line-height:26px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   margin:30px auto;
-  border:solid 1px #f0f1f1;
+  line-height: 28px;
       }  
 
 table,td
@@ -57,7 +59,7 @@ table
 
 #inputtask_1hour, #inputtask_2hour, #inputtask_3hour, #inputtask_5hour, #inputtask_6hour, #inputtask_7hour, #inputtask_8hour, #inputtask_10hour, #inputtask_9hour, #inputtask_4hour, #inputtask_11hour, #inputworkstatus
 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: GibsonLightRegular, sans-serif;
   border:0px;
   font-size:16px;
   background-color: #FCF1DC;
@@ -89,7 +91,7 @@ input[type=text] {
 }
 
 #button {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
   border-radius: 5px;
   border: 0px;
@@ -109,7 +111,7 @@ input[type=text] {
 }
 
 #reset{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: GibsonLightRegular, sans-serif;
   font-weight: bold;
   border-radius: 5px;
   border: 0px;
