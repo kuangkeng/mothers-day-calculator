@@ -159,7 +159,7 @@ $("#button, #holder").hide();
 //code for dynamic twitter message
 
 var twittermsg ="Happy Mother’s Day to me! I should be making $"+totalwageround+" a year for all the work I do. Calculate yours!";
-var twitterurl ='https://twitter.com/share?url=http://www.ibtimes.com/&text='+twittermsg+'&via=IBTimes';
+var twitterurl ='https://twitter.com/share?url=http://www.ibtimes.com/pulse/how-much-should-we-pay-moms-our-mothers-day-wage-calculator-shows-you-how-much-moms-1914907&text='+twittermsg+'&via=IBTimes';
 console.log("twittermsg: " + twittermsg);
 console.log("twitterurl: " + twitterurl);
 
