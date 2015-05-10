@@ -131,8 +131,8 @@ function addThousandsSeparator(input) {
 		if(totalwageround1>=40000 && totalwageround1<50000){var occupation="sheet metal worker";}
 		if(totalwageround1>=50000 && totalwageround1<60000){var occupation="editor";}
 		if(totalwageround1>=60000 && totalwageround1<70000){var occupation="financial specialist";}
-		if(totalwageround1>=70000 && totalwageround1<80000){var occupation="biological scientist";}
-		if(totalwageround1>=80000 && totalwageround1<90000){var occupation="biochemists";}
+		if(totalwageround1>=70000 && totalwageround1<80000){var occupation="sales representative";}
+		if(totalwageround1>=80000 && totalwageround1<90000){var occupation="art director";}
 		if(totalwageround1>=90000 && totalwageround1<100000){var occupation="economist";}
 		if(totalwageround1>=100000 && totalwageround1<110000){var occupation="aerospace engineer";}
 		if(totalwageround1>=110000 && totalwageround1<120000){var occupation="judge or magistrate";}
